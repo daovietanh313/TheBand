@@ -20,6 +20,7 @@ html {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 #nav {
     display: inline-block;
@@ -103,8 +104,27 @@ html {
     /* Kích thước của thằng slider sẽ luôn rơi vào tỷ lệ 2:1 -> chiều cao sẽ luôn bằng một nửa chiều rộng */
     padding-top: 50%;
     background: url("../img/Slider/sllider1.jpg") top center / cover no-repeat;
-    
+    position: relative;
 }
+#slider .text-content { 
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;    
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
 
 #content{
     /* height: 1000px;
