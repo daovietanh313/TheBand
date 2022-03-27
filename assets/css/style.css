@@ -9,6 +9,10 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 #main{
 
 }
@@ -149,11 +153,38 @@ html {
 #content .section-sub-heading{
     font-size: 15px;
     text-align: center;
+    margin: 15px;
+    font-style: italic;
+    opacity: 0.6;
 }
 
 
-#about-text {
+#content .about-text {
+    margin: 15px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    margin-top: 48px; 
+   
+}
+
+#content .member-item {
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
     
+}
+#content .member-name {
+    font-size: 15px;
+    
+}
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
 }
 
 #footer{
