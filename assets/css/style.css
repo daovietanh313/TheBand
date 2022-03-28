@@ -227,7 +227,42 @@ html {
     line-height: 24px;
     margin: -2px;
 }
+/* Places */
+.places-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
 
+.place-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+}
+
+.place-body {
+
+}
+
+.place-heading {
+
+}
+
+.place-time {
+
+}
+
+.place-dsc {
+
+}
+
+.place-buy-btn {
+
+}
 
 /* Footer section */
 #footer{
