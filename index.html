@@ -13,6 +13,7 @@
 <body>
     <!--  Thường thì các  thành phần chính sẽ đặt bằng id -->
     <div id="main">
+        <!-- Header -->
         <div id="header">
             <!-- ul#nav>li*5>a -->
             <ul id="nav">
@@ -40,7 +41,7 @@
             </div>
             <!-- End: Search bution -->
         </div>
-
+        <!-- Slider -->
         <div id="slider">
             <div class="text-content">
                 <h2 class="text-heading">New York
@@ -135,11 +136,42 @@
                 </p>
             </div>
         </div>
-    </div>
-    <div id="footer">
+        <!-- Footer -->
+        <div id="footer">
+        <!-- Modal -->
+        </div>
+        <div class="modal">
+            <div class="modal-container">
+                <div class="modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <header class="modal-header">
+                    <i class="modal-heading-icon ti-bag"></i>
+                    Tickets
+                </header>
 
-    </div>
+                <div class="modal-body">
+                    <label for="ticket-quantity" class="modal-lable">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
 
+                    <label for="ticket-email" class="modal-lable">
+                        <i class="ti-user"></i>
+                        Send to
+                    </label>
+                    <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email...">
+                    <button id="buy-tickets">
+                        Pay <i class="ti-check"></i>
+                    </button>
+                </div>
+                <footer class="modal-footer">
+                    <p class="modal-help">Need <a href="">help?</a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
