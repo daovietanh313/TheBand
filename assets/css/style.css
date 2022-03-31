@@ -4,9 +4,49 @@
     box-sizing: border-box;
 }
 
+/* Common */
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Những đặc tính chung của column */
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full {
+    width: 100%;
+}
+/* Chia column ra làm 2 */
+.col-half {
+    width: 50%;
+}
+/* Chia colum ra làm 3  */
+.col-third {
+    width: calc(100%/3);
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+/* Common */
+
 html {
     /* Đầu tiên nó tìm font Helvetica, nếu k có nó tìm qua Arial, nếu ko có nữa thì bất thì font nào miễn là chuẩn sans-serif (loại font ko có gạch chân) */
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .clear {
@@ -15,6 +55,10 @@ html {
 
 .text-white {
     color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 #main{
@@ -141,9 +185,12 @@ html {
 
 #content .content-section {
     width: 800px;  
+    width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;  
+    padding-left: 16px;
+    padding-right: 16px;
    
 }
 
@@ -176,8 +223,8 @@ html {
 }
 
 #content .member-item {
-    float: left;
-    width: calc(100%/3);
+    /* float: left;
+    width: calc(100%/3); */
     text-align: center;
     
 }
@@ -229,14 +276,11 @@ html {
 }
 /* Places */
 .places-list {
-    margin: 32px -8px 48px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
-.place-item {
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
-}
+
 
 .place-img {
     width: 100%;
@@ -376,6 +420,79 @@ html {
     color: #2196F3;
 }
 
+
+/* Contact from*/
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding:10px 16px;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    border: none;
+    
+} 
+.map-section img {
+    width: 100%;
+}
+
+/* Footer section */
+#footer{
+    background-color: #f1f1f1!important;
+    font-size: 20px;
+    padding: 64px 16px;
+    text-align: center;
+}
+/* #footer .socials-list i[class*="ti-"]{
+    width: 150px;
+} */
+#footer .socials-list a, #footer .copyright a:hover{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .socials-list a:hover {
+    opacity: 0.6;
+}
+#footer .copyright {
+    font-size: 15px !important;
+    margin: 15px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+#footer .copyright a{    
+    color: #000 ;
+}
+
+
+
 @keyframes modalFadeIn {
     from {
         opacity: 0;
@@ -386,9 +503,3 @@ html {
         transform: translate(0);
     }
 }
-
-/* Footer section */
-#footer{
-
-}
-
