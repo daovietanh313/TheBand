@@ -9,6 +9,7 @@
     <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/dark-theme-1/100/ultimate_collection_dark_drums-512.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 
@@ -31,9 +32,9 @@
                     </a>
                     <!-- ul.subnav>li*3>a -->
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -42,6 +43,11 @@
                 <i class="search-icon ti-search"></i>
             </div>
             <!-- End: Search bution -->
+            <!-- Begin: Menu mobile button -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            <!-- End: Menu mobile button -->
         </div>
         <!-- Slider -->
         <div id="slider">
@@ -222,35 +228,8 @@
     </div>
     </div>
     </div>
-    <script>
-        const buyBtns = document.querySelectorAll('.js-buy-ticket')
-        const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelector('.js-modal-container')
-        const modalClose = document.querySelector('.js-modal-close')
-        // Hàm hiển thị modal mua vé (thêm class open vào class modal)
-        function showBuyTickets() {
-            modal.classList.add('open')
-        }
-        // Hàm ẩn modal mua vé ( gỡ bỏ class open của class modal)
-        function hideBuyTickets() {
-            modal.classList.remove('open')
-        }
-        // Lặp qua từng thẻ buttion và nghe hành vi click
-
-        for (const buyBtn of buyBtns) {
-            buyBtn.addEventListener('click', showBuyTickets)
-        }
-        // Nghe hành vi click vào nút close
-
-        modalClose.addEventListener('click', hideBuyTickets)
-
-        modal.addEventListener('click', hideBuyTickets)
-
-        modalContainer.addEventListener('click', function (event) {
-            event.stopPropagation()
-        })
-
-    </script>
+    <script src="./assets/script/modalClick.js"></script>
+    <script src="./assets/script/responsive.js"></script>
 </body>
 
 </html>
