@@ -72,8 +72,7 @@ html {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1;
-    overflow: hidden;
+    z-index: 1;    
 }
 #nav {
     display: inline-block;
@@ -292,11 +291,9 @@ html {
 }
 /* Places */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 }
-
-
 
 .place-img {
     width: 100%;
