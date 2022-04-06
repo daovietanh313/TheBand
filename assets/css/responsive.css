@@ -55,4 +55,11 @@
     .col-third {
         width: 100%;
     }
+    .s-mobile-colful {
+        width: 100%;
+        
+    }
+    .contact-form {
+        margin-top: 16px;
+    }
 }
